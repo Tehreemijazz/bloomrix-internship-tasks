@@ -1,0 +1,1 @@
+# bloomrix-internship-tasks
