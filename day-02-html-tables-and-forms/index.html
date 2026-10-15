@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Registration Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Intern Registration Form</h1>
+        <p>Welcome! Please complete this form to apply for our internship program.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName"
+                       placeholder="Enter full name" autocomplete="name"
+                       minlength="3" maxlength="50" size="30" required>
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="example@email.com" autocomplete="email" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                       placeholder="03XXXXXXXXX" autocomplete="tel"
+                       pattern="[0-9]{11}" title="Enter an 11-digit phone number" required>
+                <br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" max="2008-12-31" required>
+                <br><br>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Training Preferences</legend>
+
+                <label for="interview">Preferred Interview Time:</label>
+                <input type="time" id="interview" name="interview"
+                       min="09:00" max="17:00" required>
+                <br><br>
+
+                <label for="month">Preferred Training Month:</label>
+                <input type="month" id="month" name="month" required>
+                <br><br>
+
+                <label for="week">Preferred Training Week:</label>
+                <input type="week" id="week" name="week">
+                <br><br>
+
+                <label for="milestone">Select Your Current Milestone:</label>
+                <select id="milestone" name="milestone" required>
+                    <option value="" selected disabled>Choose a milestone</option>
+                    <optgroup label="Learning">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                    </optgroup>
+                    <optgroup label="Experience">
+                        <option value="advanced">Advanced</option>
+                        <option value="experienced">Experienced</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="skills">Rate Your Current Skill Level (1–10):</label>
+                <input type="range" id="skills" name="skills"
+                       min="1" max="10" step="1" value="5">
+                <br><br>
+
+                <label for="color">Preferred Workspace Color:</label>
+                <input type="color" id="color" name="color" value="#3366cc">
+                <br><br>
+
+                <label for="trainingMode">Preferred Training Mode:</label>
+                <select id="trainingMode" name="trainingMode" size="3" multiple>
+                    <option value="online">Online</option>
+                    <option value="onsite">On-site</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+                <p>Hold Ctrl (Windows) or Command (Mac) to select multiple options.</p>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Professional Information</legend>
+
+                <label for="portfolio">Portfolio URL:</label>
+                <input type="url" id="portfolio" name="portfolio"
+                       placeholder="https://example.com" autocomplete="url">
+                <br><br>
+
+                <label for="resume">Upload Resume (PDF or DOCX):</label>
+                <input type="file" id="resume" name="resume"
+                       accept=".pdf,.docx" required>
+                <br><br>
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password"
+                       placeholder="Enter a strong password"
+                       minlength="8" maxlength="30"
+                       autocomplete="new-password" required>
+                <br><br>
+
+                <label for="search">Search Your Interested Field:</label>
+                <input type="search" id="search" name="search"
+                       placeholder="e.g. AI, Web Development, QA">
+                <br><br>
+
+                <p>Select Your Skills:</p>
+
+                <input type="checkbox" id="html" name="skillsList" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="CSS" name="skillsList" value="CSS">
+                <label for="CSS">CSS</label>
+
+                <input type="checkbox" id="JavaScript" name="skillsList" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+
+                <input type="checkbox" id="ai" name="skillsList" value="AI">
+                <label for="ai">Artificial Intelligence</label>
+
+                <br><br>
+
+                <label for="documents">Upload Additional Documents:</label>
+                <input type="file" id="documents" name="documents"
+                       accept=".pdf,.docx" multiple>
+                <br><br>
+
+                <label for="experience">Previous Experience:</label>
+                <textarea id="experience" name="experience"
+                          rows="4" cols="40"
+                          placeholder="Describe your projects or experience..."
+                          maxlength="500"></textarea>
+                <br><br>
+
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">
+                    I confirm that the information provided is correct.
+                </label>
+            </fieldset>
+
+            <br>
+
+            <button type="submit">Submit Registration</button>
+            <button type="reset">Reset Form</button>
+
+        </form>
+
+        <hr>
+
+        <section>
+            <h2>Course and Education Summary</h2>
+
+            <table border="1">
+                <caption>Internship Applicant Education Record</caption>
+
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Course / Qualification</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>BS Computer Science</td>
+                        <td>University</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Intermediate</td>
+                        <td>College</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>HTML and Forms</td>
+                        <td>Bloomrix Internship</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th colspan="3" scope="row">Total Records</th>
+                        <td>3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Thank you for applying to our internship program!</p>
+    </footer>
+
+</body>
+</html>
