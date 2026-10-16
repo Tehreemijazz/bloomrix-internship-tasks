@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,7 +79,13 @@
                 <h3>Lesson 2: Text and Links</h3>
                 <p>
                     Learn how to use headings, paragraphs, links, and lists.
-                    Visit to learn more.
+                    Visit
+                    <a href="https://www.w3schools.com/html/default.asp"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        W3Schools HTML Tutorial
+                    </a>
+                    to learn more.
                 </p>
             </article>
 
@@ -125,13 +130,19 @@
 
             <article>
                 <h3>Video Example</h3>
+                <p>Watch a sample video with an optional caption track.</p>
 
-            <video controls width="400">
-            <source
-                src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-                type="video/mp4">
-                 Your browser does not support the video element.
-            </video>
+                <video controls width="400">
+                    <source
+                        src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        type="video/mp4">
+                    <track
+                        src="captions.vtt"
+                        kind="captions"
+                        srclang="en"
+                        label="English">
+                    Your browser does not support the video element.
+                </video>
             </article>
 
             <article>
@@ -178,7 +189,17 @@
             </blockquote>
 
             <p>
+                Source:
+                <cite>W3Schools HTML Tutorial</cite>
+            </p>
+
+            <p>
                 Remember: <q>Practice makes progress.</q>
+            </p>
+
+            <p>
+                Reference:
+                <cite>W3Schools HTML Tutorial</cite>
             </p>
 
             <h3>HTML Code Example</h3>
