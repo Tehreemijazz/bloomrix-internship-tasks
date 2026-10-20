@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internship application portal with advanced HTML form controls and validation.">
+    <title>Intern Application Portal</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Intern Application Portal</h1>
+        <p>Welcome! Complete the form below to apply for an internship opportunity.</p>
+        <hr>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Application Information</h2>
+            <p>Please provide accurate information and review your details before submitting.</p>
+
+            <form action="#" method="get" autocomplete="on">
+
+                <input type="hidden" name="application_code" value="INT-2026-001">
+
+                <fieldset>
+                    <legend><strong>1. Applicant Details</strong></legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        minlength="3"
+                        maxlength="50"
+                        autocomplete="name"
+                        required>
+                    <br><br>
+
+                    <label for="fathername">Father's Name:</label>
+                    <input
+                        type="text"
+                        id="fathername"
+                        name="fathername"
+                        minlength="3"
+                        maxlength="50"
+                        required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@email.com"
+                        autocomplete="email"
+                        required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="03001234567"
+                        pattern="[0-9]{11}"
+                        minlength="11"
+                        maxlength="11"
+                        autocomplete="tel"
+                        title="Enter an 11-digit phone number."
+                        required>
+                    <br><br>
+
+                    <label for="address">Address:</label>
+                    <br>
+                    <textarea
+                        id="address"
+                        name="address"
+                        rows="4"
+                        cols="40"
+                        minlength="10"
+                        maxlength="200"
+                        placeholder="Enter your complete address"
+                        autocomplete="street-address"
+                        required></textarea>
+                    <br><br>
+
+                    <label for="city">City:</label>
+                    <input
+                        type="text"
+                        id="city"
+                        name="city"
+                        autocomplete="address-level2"
+                        required>
+                    <br><br>
+
+                    <label for="birthdate">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="birthdate"
+                        name="birthdate"
+                        max="2008-12-31"
+                        required>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>2. Education and Skills</strong></legend>
+
+                    <label for="degree">Qualification:</label>
+                    <select id="degree" name="degree" required>
+                        <option value="">Select qualification</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                    </select>
+                    <br><br>
+
+                    <label for="university">University / Institute:</label>
+                    <input
+                        type="text"
+                        id="university"
+                        name="university"
+                        minlength="3"
+                        maxlength="100"
+                        required>
+                    <br><br>
+
+                    <label for="cgpa">CGPA (out of 4.00):</label>
+                    <input
+                        type="number"
+                        id="cgpa"
+                        name="cgpa"
+                        min="0"
+                        max="4"
+                        step="0.01"
+                        placeholder="e.g. 3.50"
+                        required>
+                    <br><br>
+
+                    <label for="skills">Enter Your Skills:</label>
+                    <input
+                        type="text"
+                        id="skills"
+                        name="skills"
+                        list="skill-options"
+                        placeholder="Choose or type a skill"
+                        required>
+
+                    <datalist id="skill-options">
+                        <option value="HTML">
+                        <option value="CSS">
+                        <option value="JavaScript">
+                        <option value="Python">
+                        <option value="React">
+                        <option value="Flutter">
+                        <option value="SQL">
+                    </datalist>
+                    <br><br>
+
+                    <label for="other-skills">Select Additional Skills:</label>
+                    <br>
+                    <select id="other-skills" name="other_skills" multiple size="4">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                        <option value="react">React</option>
+                        <option value="flutter">Flutter</option>
+                    </select>
+                    <p><small>Hold Ctrl on Windows to select multiple skills.</small></p>
+
+                    <label for="skill-level">Your Skill Level:</label>
+                    <meter
+                        id="skill-level"
+                        min="0"
+                        max="100"
+                        low="30"
+                        high="70"
+                        optimum="85"
+                        value="75">75%</meter>
+                    <p>Skill level: 75 out of 100</p>
+
+                    <label for="experience">Relevant Experience (years):</label>
+                    <input
+                        type="number"
+                        id="experience"
+                        name="experience"
+                        min="0"
+                        max="10"
+                        step="1"
+                        value="0">
+                    <br><br>
+
+                    <label for="portfolio">Portfolio URL:</label>
+                    <input
+                        type="url"
+                        id="portfolio"
+                        name="portfolio"
+                        placeholder="https://example.com"
+                        maxlength="200">
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>3. Internship Preferences</strong></legend>
+
+                    <label for="position">Internship Position:</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="backend">Backend Developer</option>
+                        <option value="fullstack">Full Stack Developer</option>
+                        <option value="flutter">Flutter Developer</option>
+                        <option value="ai">AI / Machine Learning Intern</option>
+                    </select>
+                    <br><br>
+
+                    <label for="start-date">Preferred Start Date and Time:</label>
+                    <input
+                        type="datetime-local"
+                        id="start-date"
+                        name="start_date"
+                        min="2026-01-01T00:00"
+                        max="2027-12-31T23:59"
+                        required>
+                    <br><br>
+
+                    <label for="interview-date">Preferred Interview Date:</label>
+                    <input
+                        type="date"
+                        id="interview-date"
+                        name="interview_date"
+                        min="2026-01-01"
+                        max="2027-12-31">
+                    <br><br>
+
+                    <label for="resume">Upload Resume (PDF or Word):</label>
+                    <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf,.doc,.docx"
+                        multiple
+                        required>
+                    <p><small>You may select more than one file. Accepted formats: PDF and Word.</small></p>
+
+                    <label for="cover-letter">Cover Letter:</label>
+                    <br>
+                    <textarea
+                        id="cover-letter"
+                        name="cover_letter"
+                        rows="5"
+                        cols="40"
+                        minlength="20"
+                        maxlength="1000"
+                        placeholder="Explain why you are suitable for this internship"
+                        required></textarea>
+                    <br><br>
+
+                    <label for="application-status">Application Status:</label>
+                    <input
+                        type="text"
+                        id="application-status"
+                        name="application_status"
+                        value="Pending"
+                        readonly>
+                    <br><br>
+
+                    <label for="reference">Reference (Optional):</label>
+                    <input
+                        type="text"
+                        id="reference"
+                        name="reference"
+                        disabled
+                        value="Currently unavailable">
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>4. Application Progress</strong></legend>
+
+                    <label for="progress">Application Form Progress:</label>
+                    <progress id="progress" value="75" max="100">75%</progress>
+                    <p>Demonstration progress: 75% complete.</p>
+
+                    <label for="application-result">Application Summary:</label>
+                    <output id="application-result" name="application_result">
+                        Complete all required fields before submitting.
+                    </output>
+                    <br><br>
+                </fieldset>
+
+                <br>
+
+                <section>
+                    <h2>Terms and Conditions</h2>
+
+                    <p>
+                        <b>Please read carefully.</b>
+                        <i>All information must be correct.</i>
+                        <u>Review your application before submission.</u>
+                    </p>
+
+                    <p>
+                        <s>Old requirement: No portfolio required.</s>
+                        <br>
+                        <del>Portfolio submission was optional.</del>
+                        <ins>Updated requirement: Applicants are encouraged to provide a portfolio URL.</ins>
+                    </p>
+
+                    <p>
+                        Qualification example: H<sub>2</sub>O is the chemical formula for water.
+                        A mathematical example is 2<sup>3</sup> = 8.
+                    </p>
+
+                    <p>
+                        <bdi>علی</bdi> is an example of isolated right-to-left text.
+                    </p>
+
+                    <p>
+                        Text direction example:
+                        <bdo dir="rtl">Welcome to the Intern Application Portal</bdo>
+                    </p>
+
+                    <p>
+                        Your application code is
+                        <strong>INT-2026-001</strong>.
+                        Keep it for your records.
+                    </p>
+
+                    <label for="terms">
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            name="terms"
+                            value="accepted"
+                            required>
+                        I confirm that the information provided is accurate and I agree to the terms.
+                    </label>
+                </section>
+
+                <br>
+
+                <fieldset>
+                    <legend><strong>5. Submit Application</strong></legend>
+
+                    <input type="submit" value="Submit Application">
+
+                    <input type="reset" value="Reset Form">
+
+                    <input
+                        type="button"
+                        value="Application Information">
+
+                    <p>Image submit button:</p>
+
+                    <input
+                        type="image"
+                        src="https://placehold.co/140x40/336699/FFFFFF?text=Apply+Now"
+                        alt="Submit application"
+                        width="140"
+                        height="40">
+                </fieldset>
+
+            </form>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Additional HTML Examples</h2>
+
+            <h3>Canvas Drawing Area</h3>
+            <canvas id="application-canvas" width="300" height="100">
+                Your browser does not support the canvas element.
+            </canvas>
+            <p><small>The canvas is included as a drawing area. Drawing requires JavaScript, which is not permitted in this assignment.</small></p>
+
+            <h3>Image Map Example</h3>
+            <p>Select a region of the image to open a related website.</p>
+
+            <img
+                src="https://placehold.co/400x150/e0eaf5/222222?text=Home+%7C+Courses+%7C+Contact"
+                alt="Example navigation image with Home, Courses and Contact regions"
+                usemap="#portal-map"
+                width="400"
+                height="150">
+
+            <map name="portal-map">
+                <area
+                    shape="rect"
+                    coords="0,0,133,150"
+                    href="https://www.example.com/"
+                    alt="Home section"
+                    target="_blank">
+
+                <area
+                    shape="rect"
+                    coords="134,0,266,150"
+                    href="https://www.example.org/"
+                    alt="Courses section"
+                    target="_blank">
+
+                <area
+                    shape="rect"
+                    coords="267,0,400,150"
+                    href="https://www.example.net/"
+                    alt="Contact section"
+                    target="_blank">
+            </map>
+
+            <h3>Template Example</h3>
+            <p>The template below contains reusable markup. It is not displayed by default.</p>
+
+            <template id="application-template">
+                <article>
+                    <h3>Application Information</h3>
+                    <p>This is reusable application content.</p>
+                </article>
+            </template>
+
+            <h3>Noscript Fallback</h3>
+            <noscript>
+                <p>JavaScript is disabled or unavailable. This portal uses HTML form controls without JavaScript.</p>
+            </noscript>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p><small>Intern Application Portal &copy; 2026. All rights reserved.</small></p>
+        <p><small>Thank you for your interest in our internship program.</small></p>
+    </footer>
+
+</body>
+</html>
