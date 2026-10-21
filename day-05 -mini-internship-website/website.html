@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A mini internship website showcasing skills, training, assignments, and contact information.">
+    <meta name="author" content="Tehreem Ijaz">
+    <meta name="keywords" content="HTML, internship, training, assignments, web development">
+
+    <title>Tehreem Ijaz | Mini Internship Website</title>
+
+    <link rel="license" href="https://opensource.org/licenses/MIT">
+</head>
+
+<body>
+
+    <header id="home" class="page-header" title="Website header">
+        <h1>Welcome to My Mini Internship Website</h1>
+
+        <p>
+            Hello! I am <strong>Tehreem Ijaz</strong>,
+            an aspiring <em>Frontend Developer</em> and
+            <mark>Computer Science graduate</mark>.
+        </p>
+
+        <p>
+            <small>This website is created as my Day 05 HTML project.</small>
+        </p>
+
+        <nav aria-label="Main navigation">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#training">Training</a></li>
+                <li><a href="#assignments">Assignments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <!-- ABOUT SECTION -->
+        <section id="about">
+            <h2>About Me</h2>
+
+            <figure>
+                <picture>
+                    <source
+                        media="(min-width: 800px)"
+                        srcset="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800">
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=500"
+                        alt="Laptop and workspace used for learning web development"
+                        width="400"
+                        height="267"
+                        loading="lazy">
+                </picture>
+                <figcaption>Learning and practicing web development.</figcaption>
+            </figure>
+
+            <p>
+                I am learning HTML and improving my skills in website
+                development. My goal is to become a professional
+                <strong>Frontend Developer</strong>.
+            </p>
+
+            <p>
+                I am interested in software engineering, artificial
+                intelligence, and building useful web applications.
+            </p>
+
+            <h3>My Career Goal</h3>
+            <p>
+                My goal is to create accessible, meaningful, and
+                user-friendly websites using modern web technologies.
+            </p>
+
+            <h3>My Learning Principles</h3>
+            <blockquote cite="https://www.w3schools.com/html/default.asp">
+                Learning web development requires regular practice,
+                curiosity, and patience.
+            </blockquote>
+
+            <p>
+                I believe that
+                <q>practice makes progress</q>
+                when learning a new skill.
+            </p>
+
+            <p>
+                Learn more from
+                <cite>Web Docs</cite>:
+                <a href="https://www.w3schools.com/html/default.asp"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    HTML documentation
+                </a>.
+            </p>
+
+            <address>
+                Location: Wah Cantt, Pakistan<br>
+                Professional interest: Frontend Development<br>
+                Contact: <a href="#contact">Use the contact form</a>
+            </address>
+        </section>
+
+        <hr>
+
+        <!-- SKILLS SECTION -->
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <p>These are the skills I am currently learning and practicing.</p>
+
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>HTML document structure</li>
+                <li>HTML forms and input controls</li>
+                <li>Links and images</li>
+                <li>Semantic HTML elements</li>
+                <li>Tables and lists</li>
+            </ul>
+
+            <h3>Learning Progress</h3>
+
+            <label for="html-progress">HTML course completion:</label>
+            <progress id="html-progress" value="5" max="5">
+                100%
+            </progress>
+            <p>Progress: 5 out of 5 learning days completed.</p>
+
+            <label for="confidence-meter">HTML confidence level:</label>
+            <meter id="confidence-meter"
+                   min="0"
+                   max="100"
+                   low="30"
+                   high="80"
+                   optimum="90"
+                   value="70">
+                70%
+            </meter>
+            <p>Current self-assessment: 70 out of 100.</p>
+
+            <h3>Useful HTML Terms</h3>
+
+            <p>
+                <dfn id="html-definition">HTML</dfn> stands for
+                HyperText Markup Language. It defines the structure
+                of web pages.
+            </p>
+
+            <p>
+                A web page can use a variable such as
+                <var>pageTitle</var> to represent a title in a
+                programming example.
+            </p>
+
+            <p>
+                An example of a machine-readable value is:
+                <data value="HTML-101">HTML Basics</data>.
+            </p>
+
+            <p>
+                A long word can contain an optional line-break point:
+                internship<wbr>development<wbr>program.
+            </p>
+
+            <p>
+                Some content can be written in
+                <b>bold</b>, <i>italic</i>, <u>underlined</u>,
+                or <del>deleted</del> text. You can also show
+                <ins>inserted text</ins> and chemical notation such
+                as H<sub>2</sub>O or mathematical notation such as x<sup>2</sup>.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- TRAINING SECTION -->
+        <section id="training">
+            <h2>My Internship Training</h2>
+
+            <p>
+                My training focuses on learning HTML elements,
+                building web pages, and completing practical tasks.
+            </p>
+
+            <h3>Training Schedule</h3>
+
+            <table>
+                <caption>Five-Day HTML Learning Schedule</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Day</th>
+                        <th scope="col">Topic</th>
+                        <th scope="col">Practice Task</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Day 01</td>
+                        <td>HTML Basics and Forms</td>
+                        <td>Personal Profile and Contact Page</td>
+                    </tr>
+                    <tr>
+                        <td>Day 02</td>
+                        <td>HTML Structure and Elements</td>
+                        <td>Practice HTML elements and attributes</td>
+                    </tr>
+                    <tr>
+                        <td>Day 03</td>
+                        <td>HTML Content and Media</td>
+                        <td>HTML Training Course Page</td>
+                    </tr>
+                    <tr>
+                        <td>Day 04</td>
+                        <td>Advanced Forms and Content Tags</td>
+                        <td>Advanced HTML practice</td>
+                    </tr>
+                    <tr>
+                        <td>Day 05</td>
+                        <td>Complete HTML Project</td>
+                        <td>Mini Internship Website</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Training Details</h3>
+
+            <details>
+                <summary>What did I learn in HTML basics?</summary>
+                <p>
+                    I learned document structure, headings, paragraphs,
+                    links, images, lists, and basic form controls.
+                </p>
+            </details>
+
+            <details>
+                <summary>Why are semantic HTML tags important?</summary>
+                <p>
+                    Semantic tags describe the purpose of page content.
+                    They help browsers, search engines, and assistive
+                    technologies understand the page structure.
+                </p>
+            </details>
+
+            <details>
+                <summary>What is the purpose of HTML forms?</summary>
+                <p>
+                    Forms collect information from users through
+                    input fields, selection controls, and buttons.
+                </p>
+            </details>
+
+            <h3>Learning Resources</h3>
+
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/html/default.asp"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        W3Schools HTML Tutorial
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3.org/TR/html52/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        W3C HTML Specification Archive
+                    </a>
+                </li>
+            </ul>
+
+            <h3>Training Video</h3>
+
+            <p>Watch an HTML learning video if the embedded resource is available.</p>
+
+            <iframe
+                src="https://www.youtube.com/embed/HcOc7P5BMi4"
+                title="HTML tutorial video"
+                width="550"
+                height="300"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+            <h3>Audio Example</h3>
+
+            <audio controls>
+                <source
+                    src="https://www.w3schools.com/html/horse.mp3"
+                    type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h3>Video Example</h3>
+
+            <video controls width="400" poster="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600">
+                <source
+                    src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+                    type="video/mp4">
+                <track
+                    kind="captions"
+                    src="captions-en.vtt"
+                    srclang="en"
+                    label="English captions">
+                Your browser does not support the video element.
+            </video>
+
+            <p>
+                Note: The caption track requires a valid
+                <code>captions-en.vtt</code> file in this project folder.
+            </p>
+
+            <h3>Embedded Resource Examples</h3>
+
+            <p>The object element can display an external document.</p>
+
+            <object
+                data="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                type="application/pdf"
+                width="500"
+                height="300">
+                <p>
+                    The PDF cannot be displayed.
+                    <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf">
+                        Open the PDF document
+                    </a>.
+                </p>
+            </object>
+
+            <p>Embed element example:</p>
+
+            <embed
+                src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                type="application/pdf"
+                width="500"
+                height="300">
+
+        </section>
+
+        <hr>
+
+        <!-- ASSIGNMENTS SECTION -->
+        <section id="assignments">
+            <h2>My Assignments</h2>
+
+            <p>
+                I practice HTML by creating small projects and combining
+                the elements I learn each day.
+            </p>
+
+            <ol>
+                <li>
+                    <strong>Day 01:</strong>
+                    HTML Basics and Forms
+                </li>
+                <li>
+                    <strong>Day 02:</strong>
+                    HTML Structure and Elements
+                </li>
+                <li>
+                    <strong>Day 03:</strong>
+                    HTML Training Course Page
+                </li>
+                <li>
+                    <strong>Day 04:</strong>
+                    Advanced Form and Content Tags
+                </li>
+                <li>
+                    <strong>Day 05:</strong>
+                    Complete Mini Internship Website
+                </li>
+            </ol>
+
+            <h3>Example HTML Code</h3>
+
+            <p>The following code creates a simple heading:</p>
+
+            <pre><code>&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;p&gt;I am learning HTML.&lt;/p&gt;</code></pre>
+
+            <p>
+                To save a file, press
+                <kbd>Ctrl</kbd> + <kbd>S</kbd>
+                on Windows.
+            </p>
+
+            <p>
+                A sample terminal output might be:
+                <samp>HTML file saved successfully.</samp>
+            </p>
+
+            <h3>Try an HTML Example</h3>
+
+            <p>
+                Enter a topic and choose a learning level.
+                The form below demonstrates HTML controls.
+            </p>
+
+            <form action="#assignments" method="get">
+                <fieldset>
+                    <legend>Practice Information</legend>
+
+                    <label for="practice-topic">Topic:</label>
+                    <input
+                        type="text"
+                        id="practice-topic"
+                        name="topic"
+                        list="topic-options"
+                        placeholder="Enter an HTML topic"
+                        required>
+
+                    <datalist id="topic-options">
+                        <option value="HTML Forms">
+                        <option value="Semantic HTML">
+                        <option value="HTML Media">
+                        <option value="HTML Tables">
+                    </datalist>
+
+                    <label for="practice-level">Learning level:</label>
+                    <select id="practice-level" name="level" required>
+                        <option value="">Select a level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+
+                    <button type="submit">Submit Practice</button>
+                </fieldset>
+            </form>
+
+            <h3>Dialog Example</h3>
+
+            <p>
+                The dialog element represents a dialog or other
+                interactive component.
+            </p>
+
+            <dialog open aria-labelledby="dialog-heading">
+                <h3 id="dialog-heading">Assignment Information</h3>
+                <p>
+                    This is an example of an open HTML dialog.
+                    The open attribute makes it visible without JavaScript.
+                </p>
+                <p>
+                    <a href="#assignments">Return to assignments</a>
+                </p>
+            </dialog>
+
+            <h3>Reusable HTML Template</h3>
+
+            <p>
+                The template element stores HTML that is not rendered
+                until it is used by a script or other processing.
+            </p>
+
+            <template id="assignment-template">
+                <article>
+                    <h3>New Assignment</h3>
+                    <p>Assignment description goes here.</p>
+                </article>
+            </template>
+
+            <p>
+                The template above is included for HTML practice.
+                It does not automatically display its contents.
+            </p>
+
+            <h3>Extra HTML Elements</h3>
+
+            <p
+                id="editable-note"
+                class="editable-content"
+                title="This paragraph can be edited in the browser"
+                contenteditable="true"
+                spellcheck="true"
+                tabindex="0"
+                translate="yes">
+                This paragraph is editable. Click here to practice
+                contenteditable and spellcheck.
+            </p>
+
+            <p
+                draggable="true"
+                data-assignment="day-05"
+                data-status="in-progress">
+                This text demonstrates draggable and custom data attributes.
+            </p>
+
+            <p hidden>
+                This is hidden content used to demonstrate the hidden attribute.
+            </p>
+
+            <p>
+                The following abbreviation is useful:
+                <abbr title="HyperText Markup Language">HTML</abbr>.
+            </p>
+
+            <p>
+                My project was prepared on
+                <time datetime="2026-10-21">October 21, 2026</time>.
+            </p>
+
+            <noscript>
+                JavaScript is disabled. This website is designed to work
+                without JavaScript, so its main sections remain available.
+            </noscript>
+        </section>
+
+        <hr>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <p>
+                If you would like to contact me about learning,
+                training, or internship opportunities, complete the form below.
+            </p>
+
+            <form action="#contact" method="get" enctype="application/x-www-form-urlencoded">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input
+                        type="text"
+                        id="full-name"
+                        name="full_name"
+                        placeholder="Enter your full name"
+                        minlength="3"
+                        maxlength="60"
+                        autocomplete="name"
+                        required>
+
+                    <label for="email">Email Address:</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="name@example.com"
+                        autocomplete="email"
+                        required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+92 300 1234567"
+                        autocomplete="tel"
+                        pattern="[+0-9 ()-]{7,20}"
+                        title="Enter a valid phone number">
+
+                    <label for="website">Portfolio Website:</label>
+                    <input
+                        type="url"
+                        id="website"
+                        name="website"
+                        placeholder="https://example.com">
+
+                    <label for="birth-date">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="birth-date"
+                        name="birth_date">
+
+                    <label for="age">Age:</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="16"
+                        max="100"
+                        step="1"
+                        placeholder="Enter your age">
+
+                    <label for="preferred-time">Preferred Contact Time:</label>
+                    <input
+                        type="time"
+                        id="preferred-time"
+                        name="preferred_time">
+
+                    <label for="preferred-month">Preferred Joining Month:</label>
+                    <input
+                        type="month"
+                        id="preferred-month"
+                        name="preferred_month">
+                    <br>
+                    <label for="portfolio-file">Upload Resume or Document:</label>
+                    <input
+                        type="file"
+                        id="portfolio-file"
+                        name="portfolio_file"
+                        accept=".pdf,.doc,.docx">
+
+                    <label for="favorite-color">Favorite Color:</label>
+                    <input
+                        type="color"
+                        id="favorite-color"
+                        name="favorite_color"
+                        value="#336699">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Internship Preferences</legend>
+
+                    <p>Preferred work arrangement:</p>
+
+                    <input
+                        type="radio"
+                        id="remote"
+                        name="work_arrangement"
+                        value="remote"
+                        checked
+                        required>
+                    <label for="remote">Remote</label>
+
+                    <input
+                        type="radio"
+                        id="hybrid"
+                        name="work_arrangement"
+                        value="hybrid">
+                    <label for="hybrid">Hybrid</label>
+
+                    <input
+                        type="radio"
+                        id="onsite"
+                        name="work_arrangement"
+                        value="onsite">
+                    <label for="onsite">On-site</label>
+
+                    <p>Areas of interest:</p>
+
+                    <input
+                        type="checkbox"
+                        id="frontend"
+                        name="interests"
+                        value="frontend">
+                    <label for="frontend">Frontend Development</label>
+
+                    <input
+                        type="checkbox"
+                        id="software"
+                        name="interests"
+                        value="software">
+                    <label for="software">Software Engineering</label>
+
+                    <input
+                        type="checkbox"
+                        id="ai"
+                        name="interests"
+                        value="ai">
+                    <label for="ai">Artificial Intelligence</label>
+                    <br>
+                    <label for="experience">HTML Experience Level:</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select your level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                    <br>
+                    <label for="confidence">Current HTML Confidence (1–10):</label>
+                    <input
+                        type="range"
+                        id="confidence"
+                        name="confidence"
+                        min="1"
+                        max="10"
+                        value="5"
+                        step="1">
+
+                    <label for="message">Your Message:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="40"
+                        minlength="10"
+                        maxlength="1000"
+                        placeholder="Write your message here..."
+                        required></textarea>
+                    <br>
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        name="agreement"
+                        value="accepted"
+                        required>
+                    <label for="agreement">
+                        I confirm that the information provided is correct.
+                    </label>
+                </fieldset>
+
+                <button type="submit">Submit Form</button>
+                <button type="reset">Reset Form</button>
+
+                <p>
+                    <small>
+                        This is a practice form. It has no backend server,
+                        so it does not store or send submissions to an inbox.
+                    </small>
+                </p>
+
+            </form>
+
+            <h3>Contact Details</h3>
+
+            <address>
+                Tehreem Ijaz<br>
+                Wah Cantt, Pakistan<br>
+                <a href="mailto:tehreem@example.com">Email me</a>
+            </address>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <small>
+                &copy; <time datetime="2026">2026</time>
+                Tehreem Ijaz. Mini Internship Website.
+            </small>
+        </p>
+
+        <p>
+            Created for Day 05 HTML training practice.
+            All rights reserved.
+        </p>
+
+        <p><a href="#home">Back to Top</a></p>
+    </footer>
+
+</body>
+</html>
