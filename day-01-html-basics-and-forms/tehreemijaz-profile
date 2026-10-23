@@ -1,16 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio of Tehreem Ijaz, an aspiring Software Engineer">
     <title>Tehreem Ijaz | Software Engineering Intern</title>
 </head>
 <body>
 
     <h1>Tehreem Ijaz</h1>
-    <h2>Aspiring Software Engineer | Computer Science Graduate</h2>
+    <h2>Computer Science Graduate</h2>
 
     
     <p>
@@ -31,7 +29,7 @@
         <h2>My Profile</h2>
 
         <img src="profile-pic.jpg"
-             alt="Profile picture of Tehreem Ijaz"
+             alt="Profile picture"
              width="200"
              height="200">
 
@@ -76,8 +74,6 @@
 
         <h3>Programming Languages</h3>
         <ul>
-            <li>Python</li>
-            <li>Java</li>
             <li>C++</li>
             <li>JavaScript</li>
             <li>Dart</li>
@@ -172,8 +168,7 @@
 
         <p>
             I am particularly interested in frontend development,
-            API development, software testing, and AI-powered
-            applications.
+            software testing, and AI-powered applications.
         </p>
     </div>
 
