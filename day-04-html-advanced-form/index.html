@@ -1,10 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Internship application portal with advanced HTML form controls and validation.">
     <title>Intern Application Portal</title>
 </head>
 
@@ -37,7 +35,6 @@
                         placeholder="Enter your full name"
                         minlength="3"
                         maxlength="50"
-                        autocomplete="name"
                         required>
                     <br><br>
 
@@ -56,8 +53,6 @@
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="example@email.com"
-                        autocomplete="email"
                         required>
                     <br><br>
 
@@ -66,11 +61,9 @@
                         type="tel"
                         id="phone"
                         name="phone"
-                        placeholder="03001234567"
                         pattern="[0-9]{11}"
                         minlength="11"
                         maxlength="11"
-                        autocomplete="tel"
                         title="Enter an 11-digit phone number."
                         required>
                     <br><br>
@@ -85,7 +78,6 @@
                         minlength="10"
                         maxlength="200"
                         placeholder="Enter your complete address"
-                        autocomplete="street-address"
                         required></textarea>
                     <br><br>
 
@@ -94,7 +86,6 @@
                         type="text"
                         id="city"
                         name="city"
-                        autocomplete="address-level2"
                         required>
                     <br><br>
 
@@ -356,9 +347,7 @@
                     <legend><strong>5. Submit Application</strong></legend>
 
                     <input type="submit" value="Submit Application">
-
                     <input type="reset" value="Reset Form">
-
                     <input
                         type="button"
                         value="Application Information">
@@ -375,9 +364,7 @@
 
             </form>
         </section>
-
         <hr>
-
         <section>
             <h2>Additional HTML Examples</h2>
 
@@ -419,31 +406,12 @@
                     alt="Contact section"
                     target="_blank">
             </map>
-
-            <h3>Template Example</h3>
-            <p>The template below contains reusable markup. It is not displayed by default.</p>
-
-            <template id="application-template">
-                <article>
-                    <h3>Application Information</h3>
-                    <p>This is reusable application content.</p>
-                </article>
-            </template>
-
-            <h3>Noscript Fallback</h3>
-            <noscript>
-                <p>JavaScript is disabled or unavailable. This portal uses HTML form controls without JavaScript.</p>
-            </noscript>
-
         </section>
-
     </main>
-
     <footer>
         <hr>
         <p><small>Intern Application Portal &copy; 2026. All rights reserved.</small></p>
         <p><small>Thank you for your interest in our internship program.</small></p>
     </footer>
-
 </body>
 </html>
